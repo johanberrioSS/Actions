@@ -7,7 +7,8 @@ jobs:
     steps:
     - name: Hello world action step
       id: hello
-      uses: ./actions
+      uses: actions/checkout@v1
+      uses: ./action
       with:
         who-to-greet: 'Mona the Octocat'
     # Usa los resultados del paso `hello`
