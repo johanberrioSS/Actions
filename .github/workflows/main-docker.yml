@@ -8,7 +8,7 @@ jobs:
     - name: Hello world action step
       id: hello
     - uses: actions/checkout@v1
-    - uses: ./action-docker
+    - uses: ./docker-action
       with:
         who-to-greet: 'Mona the Octocat'
     # Use the output from the `hello` step
