@@ -1,5 +1,5 @@
 # Imagen del contenedor que ejecuta tu código
-FROM ubuntu
+FROM ubuntu:18.04
 
 # Copias tu archivo de código de tu repositorio de acción a la ruta `/`del contenedor
 COPY entrypoint.sh /entrypoint.sh
