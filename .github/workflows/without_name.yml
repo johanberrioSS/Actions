@@ -1,15 +1,14 @@
 # This is a basic workflow to help you get started with Actions
 
 
-# Controls when the action will run. Triggers the workflow on push or pull request
-# events but only for the master branches
+# Controls when the action will run. Triggers the workflow on schedule
 on: 
    schedule:
 
     - cron:  '* * * * *'
    
 env:
-   variable: Hello, world!
+   my_variable: Hello, world!
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -25,7 +24,7 @@ jobs:
 
     # Runs a single command using the runners shell
     - name: Run a one-line script
-      run: echo key
+      run: echo my_variable
 
     # Runs a set of commands using the runners shell
     - name: Run a multi-line script
