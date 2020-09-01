@@ -4,7 +4,7 @@
 # Controls when the action will run. Triggers the workflow on schedule
 on: 
    push:
-      branches: staging
+      branches: master
    
 env:
    my_variable: Hello, world!
