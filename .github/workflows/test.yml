@@ -1,7 +1,7 @@
 name: test
 
 on:
-    create
+    delete
 jobs:
   build:
 
