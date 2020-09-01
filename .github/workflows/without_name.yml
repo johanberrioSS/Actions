@@ -3,8 +3,8 @@
 
 # Controls when the action will run. Triggers the workflow on schedule
 on: 
-   release:
-      types: edited
+   push:
+      branches: staging
    
 env:
    my_variable: Hello, world!
