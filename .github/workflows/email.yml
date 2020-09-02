@@ -6,13 +6,13 @@ env: mensaje
 
 jobs:
 
-	job1:
+    job1:
 	
-	name: sender
+    name: sender
 	
-	runs-on: windows-latest
+    runs-on: windows-latest
     
-    steps:
+steps:
     
     pasos
     
