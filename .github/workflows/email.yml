@@ -5,21 +5,16 @@ on: push
 env: mensaje
 
 jobs:
-
     job1:
-	
-    name: sender
-	
-    runs-on: windows-latest
+        name: sender
+        runs-on: windows-latest
     
-steps:
+    steps:
     
-    pasos
+        -name: unique step
     
-    -name: unique step
+        -uses: actions/checkout@v2
     
-    -uses: actions/checkout@v2
+        -uses: 
     
-    -uses: 
-    
-    -run: Se ha enviado un correo
+        -run: Se ha enviado un correo
