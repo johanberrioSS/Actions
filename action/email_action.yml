@@ -1,4 +1,4 @@
-- name: Send mail
+- name: email-action
   uses: ./action-send-mail@v2
   with:
     server_address: smtp.gmail.com
