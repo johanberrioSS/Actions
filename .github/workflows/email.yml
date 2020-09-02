@@ -1,0 +1,23 @@
+name: send email
+
+on: push
+
+env: mensaje
+
+jobs:
+
+	job1:
+	
+	name: sender
+	
+	runs-on: windows-latest
+    
+    steps:
+    
+    pasos
+    
+    -name: unique step
+    
+    -uses: actions/checkout@v2
+    
+    -name: Se ha enviado un correo
