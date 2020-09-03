@@ -14,7 +14,7 @@ jobs:
     
         steps:
     
-        - uses: actions/checkout@v
+        - uses: actions/checkout@v1
     
         - uses: ./action-2
 
