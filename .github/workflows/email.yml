@@ -6,6 +6,7 @@ env: mensaje
 
 jobs:
     job1:
+
         name: sender
         runs-on: windows-latest
     
@@ -18,3 +19,4 @@ jobs:
         -uses: 
     
         -run: Se ha enviado un correo
+
