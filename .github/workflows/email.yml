@@ -16,7 +16,7 @@ jobs:
     
         -uses: actions/checkout@v2
     
-        -uses: 
+        -uses: ./action-2
     
         -run: Se ha enviado un correo
 
