@@ -12,11 +12,9 @@ jobs:
     
         steps:
     
-            -name: unique step
+        -uses: actions/checkout@v2
     
-            -uses: actions/checkout@v2
-    
-            -uses: ./action-2
+        -uses: ./action-2
 
-            -run: Se ha enviado un correo
+        -run: Se ha enviado un correo
 
