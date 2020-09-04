@@ -3,7 +3,7 @@ name:
 
 on:
     schedule:
-        - cron: ' 2 12 4 9 5'
+        - cron: ' 5 12 4 9 5'
     
 env:
     variable: Java jdk are installed   
