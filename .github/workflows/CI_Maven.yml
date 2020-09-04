@@ -7,12 +7,12 @@ on:
 jobs:
     build:
         name: Java jdk
-        runs-on: ubuntu-latest
+        runs-on: windows-latest
         
         steps:
         - uses: actions/checkout@v2
-          name: Conf Java
         - uses: actions/setup-java@v1
+          name: Conf Java
           with:
             java-version: '9.0.4' # The JDK version to make available on the path.
             java-package: jdk # (jre, jdk, or jdk+fx) - defaults to jdk
