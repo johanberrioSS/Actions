@@ -7,7 +7,7 @@ on:
 jobs:
     build:
         name: Java jdk
-        runs-on: windows-latest
+        runs-on: [windows-latest, ubuntu-latest]
         
         steps:
         - uses: actions/checkout@v2
