@@ -2,8 +2,7 @@ name:
     CI
 
 on:
-    schedule:
-        - cron: '*/15 * * * *'
+    push
     
 env:
     variable: Java jdk are installed   
