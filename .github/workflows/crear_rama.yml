@@ -3,10 +3,10 @@ on:
 
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Create/Update the branch
-        uses: peterjgrainger/action-create-branch@v1
+        uses: julb/action-manage-branch@v1
         with:
           name: release_v5.5.0_sprint1
           state: present
