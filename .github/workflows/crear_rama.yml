@@ -6,7 +6,7 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: Create/Update the branch
-        uses: julb/action-manage-branch@v1
+        uses: peterjgrainger/action-create-branch@v1
         with:
           name: release_v5.5.0_sprint1
           state: present
