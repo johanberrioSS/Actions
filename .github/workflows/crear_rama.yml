@@ -1,14 +1,27 @@
+name: create branch release
+
 on:
   push
 
 jobs:
+  commit:
+    runs-on: ubuntu-latest
+    steps:
+        - uses: stefanzweifel/git-auto-commit-action@v4
+          with:
+            # Optional but recommended
+            # Defaults to "Apply automatic changes"
+            commit_message: Apply automatic changes
+            # Optional branch name where commit should be pushed to
+            # Defaults to the current branch
+            branch: master
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Create/Update the branch
         uses: julb/action-manage-branch@v1
         with:
-          name: release_v5.5.0_sprint1
+          name: release_v5.6.0_sprint1
           state: present
           from: ${{ github.ref }}
         env:
