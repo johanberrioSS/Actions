@@ -1,0 +1,12 @@
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - name: Create/Update the branch
+        uses: julb/action-manage-branch@v1
+        with:
+          name: release_v5.5.0_sprint1
+          state: present
+          from: ${{ github.ref }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
