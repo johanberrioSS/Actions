@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
         - uses: actions/checkout@v1
-        - uses: ./action-2/auto-commits
+        - uses: ./
           with:
             # Optional but recommended
             # Defaults to "Apply automatic changes"
