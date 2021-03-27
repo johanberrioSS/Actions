@@ -40,18 +40,7 @@ inputs:
     description: Message used to create a new git tag with the commit. Keep this empty, if no tag should be created.
     required: false
     default: ''
-  push_options:
-    description: Push options (eg. --force)
-    required: false
-    default: ''
-  skip_dirty_check:
-    description: Skip the check if the git repository is dirty and always try to create a commit.
-    required: false
-    default: false
-  skip_fetch:
-    description: Skip the call to git-fetch.
-    required: false
-    default: false
+  
 
 outputs:
   changes_detected:
