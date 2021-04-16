@@ -1,5 +1,7 @@
 job1: 
   script: 
+      - git config --global user.name "johanberrioSS"
+      - git config --global user.email "johanberrio@simplesolutions.com.co"
       - git branch rama2
       - git push origin rama2
 
