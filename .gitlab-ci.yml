@@ -1,7 +1,5 @@
 job1: 
   script: 
-      - git branch rama
+      - git branch rama2
+      - git push origin rama2
 
-job2:
-  script:
-    - git push https://gitlab.com/johanberrioSS/prueba rama
