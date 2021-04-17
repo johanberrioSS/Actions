@@ -2,6 +2,7 @@ job1:
   script: 
       - project_url=$(echo $CI_PROJECT_URL | sed 's/https:\/\///')
       - git remote set-url origin https://oauth2:$GITLAB_TOKEN@$project_url
+      - git config --system --unset credential.helper
       - git config --global user.name "johanberrioSS"
       - git config --global user.email "johanberrio@simplesolutions.com.co"
       - git branch rama2
