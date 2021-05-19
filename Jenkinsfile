@@ -16,10 +16,10 @@ node {
              
         if (userInput == 'master')
            {
-              // bat 'git checkout release_v5.4.1_sprint1'
+                   bat 'git checkout release_v5.6.0_sprint1'
                
-                   bat 'D:/pruebajenkins.txt'
-                   bat 'MOVE D:/pruebajenkins.txt C:/Users/Johan/Desktop'
+                   //bat 'D:/pruebajenkins.txt'
+                  // bat 'MOVE D:/pruebajenkins.txt C:/Users/Johan/Desktop'
                
            }
            else {
