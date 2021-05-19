@@ -17,7 +17,7 @@ node {
         if (userInput == 'master')
            {
                    //bat 'git branch release_v5.7.0_sprint1'
-                   bat 'git push https://johanberrioSS:johan55$&@github.com/johanberrioSS/Actions.git release_v5.7.0_sprint1'
+                   bat 'git push https://github.com/johanberrioSS/Actions.git release_v5.7.0_sprint1'
                    //bat 'D:/pruebajenkins.txt'
                   // bat 'MOVE D:/pruebajenkins.txt C:/Users/Johan/Desktop'
              
