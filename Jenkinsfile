@@ -20,7 +20,7 @@ node {
                 
 
                 bat 'git config user.name johanberrioSS'
-                bat 'Password for "https://johanberrioSS@github.com": johan55$&'
+                
                    //bat 'git branch release_v5.7.0_sprint1'
                    bat 'git push https://github.com/johanberrioSS/Actions.git release_v5.7.0_sprint1'
                    //bat 'D:/pruebajenkins.txt'
