@@ -18,7 +18,8 @@ node {
         if (userInput == 'feature_v5.4.3')
            {
                 bat 'git add johan2.txt'
-                env.GIT_COMMIT = bat 'git commit -m "predefinido"'
+                bat 'git commit -m "predefinido"'
+                bat 'git push origin release_v5.8.0_sprint1'
                 echo env.GIT_COMMIT
                 
            
