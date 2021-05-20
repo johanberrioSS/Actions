@@ -8,7 +8,6 @@ node {
         //env.BRANCH_NAME = 'master'
         //bat 'git branch --show-current'
          echo env.BRANCH_NAME
-         echo env.GIT_COMMIT
         stage 'promotion'
         def userInput = input(
         id: 'userInput', message: 'Digite la rama', parameters: [
@@ -19,7 +18,8 @@ node {
         if (userInput == 'feature_v5.4.3')
            {
                
-                
+                bat 'git commit -m "predefinido"'
+                echo env.GIT_COMMIT
            
                 
                if (env.GIT_COMMIT == 'predefinido'){
