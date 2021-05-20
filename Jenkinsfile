@@ -18,13 +18,15 @@ node {
            {
                
                 
-
+           
                 
-                
-                bat 'git branch release_v5.4.3_sprint3'
-                bat  'git push https://johanberrioSS:Johan55$@github.com/johanberrioSS/Actions.git release_v5.4.3_sprint3'
+               if (${GIT_COMMIT}==predeterminado){
+                   bat 'git branch release_v5.4.4_sprint3'
+                   bat  'git push https://johanberrioSS:Johan55$@github.com/johanberrioSS/Actions.git release_v5.4.3_sprint4'
                    //bat 'D:/pruebajenkins.txt'
                   // bat 'MOVE D:/pruebajenkins.txt C:/Users/Johan/Desktop'
+               }
+                
              
            }
            else {
