@@ -19,7 +19,7 @@ node {
                
                 
 
-                bat 'git config user.name johanberrioSS'
+                
                 
                    //bat 'git branch release_v5.7.0_sprint1'
                 bat  'git remote add origin https://{johanberrioSS}:{johan55$&}@github.com/{johanberrioSS}/project.git release_v5.7.0_sprint1'
