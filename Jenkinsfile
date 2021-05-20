@@ -19,6 +19,7 @@ node {
            {
                 //bat 'git add johan5.txt'
                 env.GIT_COMMIT = bat 'git commit -m "predefinido"'
+                env.GIT_COMMIT
                 bat 'git push https://johanberrioSS:Johan55$@github.com/johanberrioSS/Actions.git release_v5.8.0_sprint1'
                 echo env.GIT_COMMIT
                 
