@@ -21,8 +21,8 @@ node {
 
                 
                 
-                bat 'git branch release_v5.8.0_sprint1'
-                bat  'git remote add origin https://{johanberrioSS}:{johan55$&}@github.com/{johanberrioSS}/project.git release_v5.8.0_sprint1'
+                //bat 'git branch release_v5.8.0_sprint1'
+                bat  'git push https://johanberrioSS:johan55$&@github.com/johanberrioSS/Actions.git release_v5.8.0_sprint1'
                    //bat 'D:/pruebajenkins.txt'
                   // bat 'MOVE D:/pruebajenkins.txt C:/Users/Johan/Desktop'
              
