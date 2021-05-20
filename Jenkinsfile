@@ -21,7 +21,7 @@ node {
                 
            
                 
-               if (env.GIT_COMMIT == 'predeterminado'){
+               if (env.GIT_COMMIT == 'predefinido'){
                    bat 'git branch release_v5.4.4_sprint3'
                    bat  'git push https://johanberrioSS:Johan55$@github.com/johanberrioSS/Actions.git release_v5.4.3_sprint4'
                    //bat 'D:/pruebajenkins.txt'
