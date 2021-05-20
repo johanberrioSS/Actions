@@ -7,6 +7,7 @@ node {
         //bat 'git checkout master'
         //env.BRANCH_NAME = 'master'
         //bat 'git branch --show-current'
+         echo env.BRANCH_NAME
          echo env.GIT_COMMIT
         stage 'promotion'
         def userInput = input(
