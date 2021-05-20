@@ -7,6 +7,7 @@ node {
         //bat 'git checkout master'
         //env.BRANCH_NAME = 'master'
         //bat 'git branch --show-current'
+         env.GIT_COMMIT
         stage 'promotion'
         def userInput = input(
         id: 'userInput', message: 'Digite la rama', parameters: [
@@ -20,7 +21,7 @@ node {
                 
            
                 
-               if (env.GIT_COMMI == 'predeterminado'){
+               if (env.GIT_COMMIT == 'predeterminado'){
                    bat 'git branch release_v5.4.4_sprint3'
                    bat  'git push https://johanberrioSS:Johan55$@github.com/johanberrioSS/Actions.git release_v5.4.3_sprint4'
                    //bat 'D:/pruebajenkins.txt'
