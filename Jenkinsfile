@@ -14,15 +14,15 @@ node {
         ])
         echo ("feature: "+userInput)
              
-        if (userInput == 'feature_v5.4.2')
+        if (userInput == 'feature_v5.4.3')
            {
                
                 
 
                 
                 
-                bat 'git branch release_v5.4.2_sprint1'
-                bat  'git push https://johanberrioSS:Johan55$@github.com/johanberrioSS/Actions.git release_v5.4.2_sprint3'
+                bat 'git branch release_v5.4.3_sprint3'
+                bat  'git push https://johanberrioSS:Johan55$@github.com/johanberrioSS/Actions.git release_v5.4.3_sprint3'
                    //bat 'D:/pruebajenkins.txt'
                   // bat 'MOVE D:/pruebajenkins.txt C:/Users/Johan/Desktop'
              
