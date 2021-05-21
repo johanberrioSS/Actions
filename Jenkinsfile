@@ -1,6 +1,6 @@
 node {
     
-     dir("D:/Development/Repos/Git/Java/Jenkins/workspace/Pipeline_Prueba/prueba/.git"){
+     dir("D:/Development/Repos/Git/Java/Jenkins/workspace/Pipeline_Prueba/prueba/"){
         //bat 'git branch rama2' 
         //bat 'git checkout rama2'
         //env.BRANCH_NAME = 'rama2'
@@ -20,7 +20,9 @@ node {
                 bat 'git add johan8.txt'
                 bat 'git commit -m "predefinido"'
                 bat 'git push https://johanberrioSS:Johan55$@github.com/johanberrioSS/Actions.git release_v5.8.0_sprint1'
+                bat 'MOVE D:/Development/Repos/Git/Java/Jenkins/workspace/Pipeline_Prueba/prueba/.git/COMMIT_EDITMSG D:/Development/Repos/Git/Java/Jenkins/workspace/Pipeline_Prueba/prueba/'
                 bat 'content = new File("COMMIT_EDITMSG").text'
+                echo content
                 
            
                 
