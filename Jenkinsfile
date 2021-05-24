@@ -20,7 +20,7 @@ node {
                 bat 'git add johan9.txt'
                 bat 'git commit -m "predefinido"'
                 bat 'git push https://johanberrioSS:Johan55$@github.com/johanberrioSS/Actions.git release_v5.8.0_sprint1'
-                echo "Test commit" | git commit -.git/COMMIT_EDITMSG,
+                echo "Test commit" | git commit -.git/COMMIT_EDITMSG
                     
                 bat 'MOVE D:/Development/Repos/Git/Java/Jenkins/workspace/Pipeline_Prueba/prueba/.git/COMMIT_EDITMSG.file D:/Development/Repos/Git/Java/Jenkins/workspace/Pipeline_Prueba/prueba/'
                 bat 'content = new File("COMMIT_EDITMSG").text'
