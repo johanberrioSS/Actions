@@ -17,10 +17,12 @@ node {
              
         if (userInput == 'feature_v5.4.3')
            {
-                bat 'git add johan9.txt'
-                bat 'git commit -m "predefinido" .git/COMMIT_EDITMSG'
-                bat 'git push https://johanberrioSS:Johan55$@github.com/johanberrioSS/Actions.git release_v5.8.0_sprint1'
+                //bat 'git add johan9.txt'
+                //bat 'git commit -m "predefinido" .git/COMMIT_EDITMSG'
+                //bat 'git push https://johanberrioSS:Johan55$@github.com/johanberrioSS/Actions.git release_v5.8.0_sprint1'
                 //echo "Test commit" | git commit -f .git/COMMIT_EDITMSG
+                bat 'echo %GIT_MESSAGE%'
+                bat '%GIT_MESSAGE%'
                     
                 bat 'MOVE D:/Development/Repos/Git/Java/Jenkins/workspace/Pipeline_Prueba/prueba/.git/COMMIT_EDITMSG.file D:/Development/Repos/Git/Java/Jenkins/workspace/Pipeline_Prueba/prueba/'
                 bat 'content = new File("COMMIT_EDITMSG").text'
