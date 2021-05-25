@@ -24,7 +24,7 @@ node {
                 
                 
                     
-                bat 'MOVE D:/Development/Repos/Git/Java/Jenkins/workspace/Pipeline_Prueba/prueba/johan9.txt C:/Users/Johan/Desktop'
+                bat 'MOVE D:/pruebajenkins.txt C:/Users/Johan/Desktop'
                 bat 'content = new File("COMMIT_EDITMSG").bat'
                 echo content 
                 
