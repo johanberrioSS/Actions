@@ -41,7 +41,7 @@ node {
            }
            else {
                
-               echo 'no estoy en la master '
+               echo 'no estoy en la master'
            }   
      }      
       
