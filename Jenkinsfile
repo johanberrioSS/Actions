@@ -24,8 +24,8 @@ node {
                 bat 'echo %GIT_MESSAGE%'
                 bat '%GIT_MESSAGE%'
                     
-                bat 'MOVE D:/Development/Repos/Git/Java/Jenkins/workspace/Pipeline_Prueba/prueba/.git/COMMIT_EDITMSG.file D:/Development/Repos/Git/Java/Jenkins/workspace/Pipeline_Prueba/prueba/'
-                bat 'content = new File("COMMIT_EDITMSG").text'
+                //bat 'MOVE D:/Development/Repos/Git/Java/Jenkins/workspace/Pipeline_Prueba/prueba/.git/COMMIT_EDITMSG.file D:/Development/Repos/Git/Java/Jenkins/workspace/Pipeline_Prueba/prueba/'
+                //bat 'content = new File("COMMIT_EDITMSG").text'
                 echo content 
                 
            
