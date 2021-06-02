@@ -2,7 +2,7 @@ node {
     
      dir("D:/Development/Repos/Git/Java/FocussSCM"){
         
-        bat 'git checkout feature_v5.4.1
+        bat 'git checkout feature_v5.4.1'
         bat 'git branch --show-current'
         //echo env.BRANCH_NAME
         stage 'verification'
