@@ -14,7 +14,7 @@ node {
                 bat 'git checkout feature_v5.4.1'
                 bat 'git branch --show-current'
                 
-                bat 'CD D:/Ejecutables/Model_v5/Exec'
+                CD 'D:/Ejecutables/Model_v5/Exec'
                 bat 'MOVE D:/Ejecutables/Model_v5/Exec/1_Restore_newdatabase.bat D:/Development/Repos/Git/Java/FocussSCM'
                 bat 'D:/Development/Repos/Git/Java/FocussSCM/1_Restore_newdatabase.bat'
                 //bat 'content = new File("COMMIT_EDITMSG").bat'
