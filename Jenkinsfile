@@ -23,7 +23,7 @@ node {
                     
                 //bat 'MOVE D:/pruebajenkins.txt C:/Users/Johan/Desktop'
                 //bat 'content = new File("COMMIT_EDITMSG").bat'
-                //echo content 
+                // echo content 
                 
            
                    //bat  'git push https://johanberrioSS:Johan55$@github.com/johanberrioSS/Actions.git release_v5.4.4_sprint3'
