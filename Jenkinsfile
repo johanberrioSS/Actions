@@ -11,28 +11,14 @@ node {
              
         if (userInput == 'feature_v5.4.1')
            {
-                bat 'git checkout feature_v5.4.1'
+                bat 'git checkout userInput'
                 bat 'git branch --show-current'
-                
-               dir("D:/Ejecutables/Model_v5/Exec"){
-                  // bat 'MOVE D:/Ejecutables/Model_v5/Exec/1_Restore_newdatabase.bat D:/Development/Repos/Git/Java/FocussSCM'
-               }
-                
                 bat 'D:/Ejecutables/Model_v5/Exec/1_Restore_newdatabase.bat'
-                //bat 'content = new File("COMMIT_EDITMSG").bat'
-                // echo content 
-                
-           
-                   //bat  'git push https://johanberrioSS:Johan55$@github.com/johanberrioSS/Actions.git release_v5.4.4_sprint3'
-                   bat 'D:/Development/Repos/Git/Java/FocussSCM/README_FILE.txt'
-                  // bat 'MOVE D:/pruebajenkins.txt C:/Users/Johan/Desktop'
-               
-                
-             
+   
            }
            else {
                
-               echo 'no estoy en la master'
+               echo 'no estoy en la rama principal feature de la versión'
            }   
      }      
       
