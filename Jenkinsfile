@@ -18,7 +18,7 @@ node {
            }
            else {
                
-               echo 'no estoy en la rama principal feature de la versión'
+               echo 'no estoy en la rama principal feature de la versión.'
            }   
      }      
       
