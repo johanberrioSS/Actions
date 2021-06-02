@@ -15,7 +15,7 @@ node {
                 bat 'git branch --show-current'
                 
                dir("D:/Ejecutables/Model_v5/Exec"){
-                   bat 'MOVE D:/Ejecutables/Model_v5/Exec/1_Restore_newdatabase.bat D:/Development/Repos/Git/Java/FocussSCM'
+                  // bat 'MOVE D:/Ejecutables/Model_v5/Exec/1_Restore_newdatabase.bat D:/Development/Repos/Git/Java/FocussSCM'
                }
                 
                 bat 'D:/Development/Repos/Git/Java/FocussSCM/1_Restore_newdatabase.bat'
