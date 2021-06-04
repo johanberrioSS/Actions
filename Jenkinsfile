@@ -24,8 +24,7 @@ node {
         set pal1-nuevo="<!-- <set-property name="user.agent" value="safari"/> -->"
 
         set file="D:/Development/Repos/Git/Java/FocussSCM/focussSCM/src/com/focussscm/client/gwt/FocussClient.gwt"
-
-        echo  Muestro el Archivo de texto Original
+        bat 'D:/Development/Repos/Git/Java/FocussSCM/focussSCM/src/com/focussscm/client/gwt/FocussClient.gwt'
         echo --------------------------------------
         echo file
         echo --------------------------------------
