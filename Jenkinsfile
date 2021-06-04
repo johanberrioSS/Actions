@@ -25,7 +25,7 @@ node {
 
         set file="D:/Development/Repos/Git/Java/FocussSCM/focussSCM/src/com/focussscm/client/gwt/FocussClient.gwt"
     
-        dir("D:\Development\Repos\Git\Java\FocussSCM\focussSCM\src\com\focussscm\client\gwt"){
+        dir("D:/Development/Repos/Git/Java/FocussSCM/focussSCM/src/com/focussscm/client/gwt"){
             
             bat 'D:/Development/Repos/Git/Java/FocussSCM/focussSCM/src/com/focussscm/client/gwt/FocussClient.gwt'
         }    
