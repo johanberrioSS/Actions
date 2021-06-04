@@ -12,9 +12,14 @@ node {
                   
            bat 'git checkout ' + userInput
            bat 'git branch --show-current'
-           bat 'cd D:/Ejecutables/Model_v5/Exec'
-           bat 'D:/Ejecutables/Model_v5/Exec/1_Restore_newdatabase.bat'
-           bat 'cd D:/Development/Repos/Git/Java/FocussSCM'
-     }      
+     } 
+    
+     dir("D:/Ejecutables/Model_v5/Exec"){
+         
+           bat '1_Restore_newdatabase.bat'
+           
+      }    
+           
+          
       
 }
