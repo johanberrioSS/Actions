@@ -18,7 +18,36 @@ node {
          
            bat '1_Restore_newdatabase.bat'
            
-      }    
+      } 
+    
+        set pal1-old=<set-property name="user.agent" value="safari"/>
+        set pal1-new=<!-- <set-property name="user.agent" value="safari"/> -->
+
+        set file=D:\Development\Repos\Git\Java\FocussSCM\focussSCM\src\com\focussscm\client\gwt\FocussClient.gwt
+
+        echo  Muestro el Archivo de texto Original
+        echo --------------------------------------
+        type %file%
+        echo --------------------------------------
+
+        for /f "tokens=*" %%a in (%file%) do call :wri %%a
+        type "%file%.bak" > "%file%"
+        del /f /q /a "%file%.bak"
+
+        echo.
+        echo    Muestro el Archivo ya modificado   
+        echo --------------------------------------
+        type %file%
+        echo --------------------------------------
+        pause
+
+        goto :eof
+
+        :wri
+        set lin=%*
+        call set lin=%%lin:%pal1-old%=%pal1-new%%%
+        echo %lin%>>"%file%.bak"
+goto :eof
            
           
       
