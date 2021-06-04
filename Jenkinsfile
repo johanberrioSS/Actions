@@ -10,7 +10,7 @@ node {
         ])
         echo ("feature: "+userInput)
                   
-           bat 'git checkout %userInput%'
+           bat 'git checkout ' + userInput
            bat 'git branch --show-current'
            bat 'cd D:/Ejecutables/Model_v5/Exec'
            bat 'D:/Ejecutables/Model_v5/Exec/1_Restore_newdatabase.bat'
