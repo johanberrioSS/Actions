@@ -27,7 +27,7 @@ node {
 
         echo  Muestro el Archivo de texto Original
         echo --------------------------------------
-        type %file%
+        echo file
         echo --------------------------------------
 
         for /f "tokens=*" %%a in (%file%) do call :wri %%a
