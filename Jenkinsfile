@@ -20,8 +20,8 @@ node {
            
       } 
     
-        set pal1-old=<set-property name="user.agent" value="safari"/>
-        set pal1-new=<!-- <set-property name="user.agent" value="safari"/> -->
+        set pal1-old="<set-property name="user.agent" value="safari"/>"
+        set pal1-new="<!-- <set-property name="user.agent" value="safari"/> -->"
 
         set file=D:\Development\Repos\Git\Java\FocussSCM\focussSCM\src\com\focussscm\client\gwt\FocussClient.gwt
 
