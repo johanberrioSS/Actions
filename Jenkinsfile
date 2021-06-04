@@ -30,7 +30,7 @@ node {
             bat 'D:/Development/Repos/Git/Java/FocussSCM/focussSCM/src/com/focussscm/client/gwt/FocussClient.gwt'
         }    
         
-        echo --------------------------------------
+        /*echo --------------------------------------
         echo file
         echo --------------------------------------
 
@@ -51,7 +51,7 @@ node {
         set lin=%*
         call set lin=%%lin:%pal1-old%=%pal1-new%%%
         echo %lin%>>"%file%.bak"
-goto :eof
+goto :eof*/
            
           
       
