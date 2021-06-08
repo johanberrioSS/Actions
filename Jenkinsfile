@@ -57,9 +57,8 @@ goto :eof*/
         title leer documento
 
         color fc
-
-        
-        for \f "tokens=20,21* delims=," %%i in (%FocussClient.gwt%.xml) do (echo %%i)
+    
+        for f "tokens=20,21* delims=," %%i in (%FocussClient.gwt%.xml) do (echo %%i)
         pause>nul
 
         goto leer
