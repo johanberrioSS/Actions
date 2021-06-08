@@ -28,6 +28,14 @@ node {
             set nuevo="<!-- <set-property name="user.agent" value="safari"/> -->"*/
             file="D:/Development/Repos/Git/Java/FocussSCM/focussSCM/src/com/focussscm/client/gwt/FocussClient.gwt.xml"
             bat 'FocussClient.gwt.xml'
+            bat '@echo off'
+                bat 'title leer documento'
+
+                bat ':leer'
+                bat 'for /f "tokens=1,2* delims=," %%i in (%FocussClient.gwt%.xml) do (echo %%i)'
+                bat 'pause>nul'
+
+                bat 'goto leer'
         }    
         
         /*echo "---------------------------------------"
@@ -53,14 +61,7 @@ node {
         echo %lin%>>"%file%.bak"
 goto :eof*/
     
-    bat '@echo off'
-        bat 'title leer documento'
-
-        bat ':leer'
-        bat 'for /f "tokens=1,2* delims=," %%i in (%FocussClient.gwt%.xml) do (echo %%i)'
-        bat 'pause>nul'
-
-        bat 'goto leer'
+    
            
           
       
