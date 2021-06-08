@@ -53,7 +53,7 @@ node {
         echo %lin%>>"%file%.bak"
 goto :eof*/
     
-    bat @echo off
+    bat '@echo off'
         bat 'title ler documento'
 
         color fc
