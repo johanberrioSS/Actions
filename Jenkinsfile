@@ -59,8 +59,7 @@ goto :eof*/
         color fc
 
         bat ':leer'
-        bat 'set /p nombre="Escribe el nombre del documento de texto:"'
-        bat 'for /f "tokens=1,2* delims=," %%i in (%nombre%.xml) do (echo %%i)'
+        bat 'for /f "tokens=1,2* delims=," %%i in (%FocussClient.gwt%.xml) do (echo %%i)'
         bat 'pause>nul'
 
         bat 'goto leer'
