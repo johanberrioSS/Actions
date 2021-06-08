@@ -30,7 +30,7 @@ node {
             bat 'FocussClient.gwt.xml'
         }    
         
-        echo "---------------------------------------"
+        /*echo "---------------------------------------"
         echo file
         echo "---------------------------------------"
 
@@ -49,9 +49,21 @@ node {
 
         :wri
         set lin=%*
-        call set lin=%%lin:%pal1-old%=%pal1-new%%%
+        lin=%%lin:%pal1-old%=%pal1-new%%%
         echo %lin%>>"%file%.bak"
-goto :eof
+goto :eof*/
+    
+    @echo off
+        title ler documento
+
+        color fc
+
+        :leer
+        set /p nombre="Escribe el nombre del documento de texto:"
+        for /f "tokens=20,21* delims=," %%i in (%nombre%.xml) do (echo %%i)
+        pause>nul
+
+        goto leer
            
           
       
