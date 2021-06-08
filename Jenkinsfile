@@ -61,7 +61,7 @@ goto :eof*/
         bat 'for "tokens=20,21* delims=," %%i in (%FocussClient.gwt%.xml) do (echo %%i)'
         pause>nul
 
-        goto leer
+        //goto leer
            
           
       
