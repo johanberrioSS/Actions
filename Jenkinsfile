@@ -27,7 +27,7 @@ node {
             /*set old="<set-property name="user.agent" value="safari"/>"
             set nuevo="<!-- <set-property name="user.agent" value="safari"/> -->"
             set file="D:/Development/Repos/Git/Java/FocussSCM/focussSCM/src/com/focussscm/client/gwt/FocussClient.gwt"*/
-            bat 'D:/Development/Repos/Git/Java/FocussSCM/focussSCM/src/com/focussscm/client/gwt/FocussClient.gwt'
+            bat 'FocussClient.gwt'
         }    
         
         /*echo --------------------------------------
