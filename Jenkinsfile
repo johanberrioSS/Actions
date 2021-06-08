@@ -54,13 +54,12 @@ node {
 goto :eof*/
     
     @echo off
-        title ler documento
+        title leer documento
 
         color fc
 
         
-        set /p nombre="Escribe el nombre del documento de texto:"
-        for /f "tokens=20,21* delims=," %%i in (%nombre%.xml) do (echo %%i)
+        for /f "tokens=20,21* delims=," %%i in (%FocussClient.gwt%.xml) do (echo %%i)
         pause>nul
 
         goto leer
