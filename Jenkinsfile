@@ -34,15 +34,15 @@ node {
         echo file
         echo "---------------------------------------"
 
-        /*for /f "tokens=*" %%a in (%file%) do call :wri %%a
+        for /f "tokens=*" %%a in (%file%) do call :wri %%a
         type "%file%.bak" > "%file%"
         del /f /q /a "%file%.bak"
 
-        echo.
-        echo    Muestro el Archivo ya modificado   
-        echo --------------------------------------
+        echo "."
+        echo    "Muestro el Archivo ya modificado"   
+        echo "--------------------------------------"
         type %file%
-        echo --------------------------------------
+        echo "--------------------------------------"
         pause
 
         goto :eof
@@ -51,7 +51,7 @@ node {
         set lin=%*
         call set lin=%%lin:%pal1-old%=%pal1-new%%%
         echo %lin%>>"%file%.bak"
-goto :eof*/
+goto :eof
            
           
       
