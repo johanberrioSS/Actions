@@ -32,7 +32,7 @@ node {
                 bat 'title leer documento'
 
                 bat ':leer'
-                bat 'for /f "tokens=1,2* delims=," %%i in (%FocussClient.gwt%.xml) do (echo %%i)'
+                bat 'for /f "tokens=1,2* delims=," %%i in (FocussClient.gwt.xml) do (echo %%i)'
                 bat 'pause>nul'
 
                 bat 'goto leer'
