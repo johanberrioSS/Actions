@@ -54,9 +54,7 @@ node {
 goto :eof*/
     
     bat '@echo off'
-        bat 'title ler documento'
-
-        color fc
+        bat 'title leer documento'
 
         bat ':leer'
         bat 'for /f "tokens=1,2* delims=," %%i in (%FocussClient.gwt%.xml) do (echo %%i)'
