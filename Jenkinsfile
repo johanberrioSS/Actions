@@ -58,7 +58,7 @@ goto :eof*/
 
         color fc
 
-        :leer
+        
         set /p nombre="Escribe el nombre del documento de texto:"
         for /f "tokens=20,21* delims=," %%i in (%nombre%.xml) do (echo %%i)
         pause>nul
