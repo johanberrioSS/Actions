@@ -26,15 +26,15 @@ node {
             
             /*set old="<set-property name="user.agent" value="safari"/>"
             set nuevo="<!-- <set-property name="user.agent" value="safari"/> -->"*/
-            set file="D:/Development/Repos/Git/Java/FocussSCM/focussSCM/src/com/focussscm/client/gwt/FocussClient.gwt.xml"
+            file="D:/Development/Repos/Git/Java/FocussSCM/focussSCM/src/com/focussscm/client/gwt/FocussClient.gwt.xml"
             bat 'FocussClient.gwt.xml'
         }    
         
-        /*echo --------------------------------------
+        echo --------------------------------------
         echo file
         echo --------------------------------------
 
-        for /f "tokens=*" %%a in (%file%) do call :wri %%a
+        /*for /f "tokens=*" %%a in (%file%) do call :wri %%a
         type "%file%.bak" > "%file%"
         del /f /q /a "%file%.bak"
 
