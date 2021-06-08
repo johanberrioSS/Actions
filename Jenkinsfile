@@ -24,9 +24,9 @@ node {
     
         dir("D:/Development/Repos/Git/Java/FocussSCM/focussSCM/src/com/focussscm/client/gwt"){
             
-            /*set old="<set-property name="user.agent" value="safari"/>"
+            set old="<set-property name="user.agent" value="safari"/>"
             set nuevo="<!-- <set-property name="user.agent" value="safari"/> -->"
-            set file="D:/Development/Repos/Git/Java/FocussSCM/focussSCM/src/com/focussscm/client/gwt/FocussClient.gwt"*/
+            set file="D:/Development/Repos/Git/Java/FocussSCM/focussSCM/src/com/focussscm/client/gwt/FocussClient.gwt.xml"
             bat 'FocussClient.gwt.xml'
         }    
         
