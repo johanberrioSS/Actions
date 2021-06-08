@@ -35,7 +35,6 @@ node {
                 bat 'for /f "tokens=1,2* delims=," %%i in (FocussClient.gwt.xml) do (echo %%i)'
                 bat 'pause>nul'
 
-                bat 'goto leer'
         }    
         
         /*echo "---------------------------------------"
