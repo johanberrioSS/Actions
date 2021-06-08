@@ -30,9 +30,9 @@ node {
             bat 'FocussClient.gwt.xml'
         }    
         
-        echo --------------------------------------
+        echo "--------------------------------------"
         echo file
-        echo --------------------------------------
+        echo "--------------------------------------"
 
         /*for /f "tokens=*" %%a in (%file%) do call :wri %%a
         type "%file%.bak" > "%file%"
