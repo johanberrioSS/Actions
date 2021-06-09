@@ -52,7 +52,7 @@ node {
         echo "--------------------------------------"
         pause
 
-        goto :eof
+        bat 'goto :eof'
 
         bat ':wri'
         bat 'set lin=%*'
