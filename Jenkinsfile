@@ -58,7 +58,8 @@ node {
         bat 'set lin=%*'
         bat 'lin=%%lin:%pal1-old%=%pal1-new%%%'
         bat 'echo %lin%>>"%file%.bak"'
-goto :eof
+    
+bat 'goto :eof'
     
     
            
