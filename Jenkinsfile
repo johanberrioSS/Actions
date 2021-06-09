@@ -28,37 +28,37 @@ node {
             set nuevo="<!-- <set-property name="user.agent" value="safari"/> -->"*/
             file="D:/Development/Repos/Git/Java/FocussSCM/focussSCM/src/com/focussscm/client/gwt/FocussClient.gwt.xml"
             bat 'FocussClient.gwt.xml'
-            bat '@echo off'
+            /*bat '@echo off'
                 bat 'title leer documento'
 
                 bat ':leer'
                 bat 'for /f "tokens=1,2* delims=," %%i in (FocussClient.gwt.xml) do (echo %%i)'
-                bat 'pause>nul'
+                bat 'pause>nul'*/
 
         }    
         
-        /*echo "---------------------------------------"
+        echo "---------------------------------------"
         echo file
         echo "---------------------------------------"
 
-        for /f "tokens=*" %%a in (%file%) do call :wri %%a
-        type "%file%.bak" > "%file%"
-        del /f /q /a "%file%.bak"
+        bat 'for /f "tokens=*" %%a in (%file%) do call :wri %%a'
+        bat 'type "%file%.bak" > "%file%"'
+        bat 'del /f /q /a "%file%.bak"'
 
         echo "."
         echo    "Muestro el Archivo ya modificado"   
         echo "--------------------------------------"
-        type %file%
+        bat 'type %file%'
         echo "--------------------------------------"
         pause
 
         goto :eof
 
-        :wri
-        set lin=%*
-        lin=%%lin:%pal1-old%=%pal1-new%%%
-        echo %lin%>>"%file%.bak"
-goto :eof*/
+        bat ':wri'
+        bat 'set lin=%*'
+        bat 'lin=%%lin:%pal1-old%=%pal1-new%%%'
+        bat 'echo %lin%>>"%file%.bak"'
+goto :eof
     
     
            
