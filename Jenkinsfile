@@ -35,13 +35,13 @@ node {
                 bat 'for /f "tokens=1,2* delims=," %%i in (FocussClient.gwt.xml) do (echo %%i)'
                 bat 'pause>nul'*/
 
-        }    
+            
         
         echo "---------------------------------------"
         echo file
         echo "---------------------------------------"
 
-        bat 'for /f "tokens=*" %%a in (file) do call :wri %%a'
+        bat 'for /f "tokens=*" %%a in (%file%) do call :wri %%a'
         bat 'type "%file%.bak" > "%file%"'
         bat 'del /f /q /a "%file%.bak"'
 
@@ -59,9 +59,9 @@ node {
         bat 'lin=%%lin:%pal1-old%=%pal1-new%%%'
         bat 'echo %lin%>>"%file%.bak"'
     
-bat 'goto :eof'
+        bat 'goto :eof'
     
-    
+        }
            
           
       
