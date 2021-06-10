@@ -26,7 +26,7 @@ node {
             
             /*set old="<set-property name="user.agent" value="safari"/>"
             set nuevo="<!-- <set-property name="user.agent" value="safari"/> -->"*/
-            bat 'file="D:/Development/Repos/Git/Java/FocussSCM/focussSCM/src/com/focussscm/client/gwt/FocussClient.gwt.xml"'
+            bat 'file=FocussClient.gwt.xml'
             bat 'FocussClient.gwt.xml'
             /*bat '@echo off'
                 bat 'title leer documento'
