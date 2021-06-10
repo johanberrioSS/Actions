@@ -38,7 +38,7 @@ node {
             
         
         echo "---------------------------------------"
-        echo file
+        //echo file
         echo "---------------------------------------"
 
         bat 'for /f "tokens=*" %%a in (FocussClient.gwt.xml) do call :wri %%a'
