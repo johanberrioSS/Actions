@@ -26,7 +26,7 @@ node {
             
             /*set old="<set-property name="user.agent" value="safari"/>"
             set nuevo="<!-- <set-property name="user.agent" value="safari"/> -->"*/
-            bat 'file=FocussClient.gwt.xml'
+            //bat 'file=FocussClient.gwt.xml'
             bat 'FocussClient.gwt.xml'
             /*bat '@echo off'
                 bat 'title leer documento'
@@ -41,7 +41,7 @@ node {
         echo file
         echo "---------------------------------------"
 
-        bat 'for /f "tokens=*" %%a in (file) do call :wri %%a'
+        bat 'for /f "tokens=*" %%a in (FocussClient.gwt.xml) do call :wri %%a'
         bat 'type "%file%.bak" > "%file%"'
         bat 'del /f /q /a "%file%.bak"'
 
