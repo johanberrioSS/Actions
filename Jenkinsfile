@@ -41,7 +41,7 @@ node {
         echo file
         echo "---------------------------------------"
 
-        bat 'for /f "tokens=*" %%a in (%file%) do call :wri %%a'
+        bat 'for /f "tokens=*" %%a in (file) do call :wri %%a'
         bat 'type "%file%.bak" > "%file%"'
         bat 'del /f /q /a "%file%.bak"'
 
