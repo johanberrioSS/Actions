@@ -8,7 +8,7 @@ node {
       bat 'set pal2-new=departamento'
 
 
-      bat 'dir("D:/Development/Repos/Git/Java/Actions"){
+      dir("D:/Development/Repos/Git/Java/Actions"){
         bat 'set file=texto.txt'
 
         bat 'echo  Muestro el Archivo de texto Original'
