@@ -24,8 +24,8 @@ node {
     
         dir("D:/Development/Repos/Git/Java/FocussSCM/focussSCM/src/com/focussscm/client/gwt"){
             
-            /*set old="<set-property name="user.agent" value="safari"/>"
-            set nuevo="<!-- <set-property name="user.agent" value="safari"/> -->"*/
+            bat 'set old="<set-property name="user.agent" value="safari"/>"'
+            bat 'set nuevo="<!-- <set-property name="user.agent" value="safari"/> -->"'
             //bat 'file=FocussClient.gwt.xml'
             bat 'FocussClient.gwt.xml'
             /*bat '@echo off'
@@ -42,13 +42,13 @@ node {
         echo "---------------------------------------"
 
         bat 'for /f "tokens=*" %%a in (FocussClient.gwt.xml) do call :wri %%a'
-        bat 'type "%file%.bak" > "%file%"'
-        bat 'del /f /q /a "%file%.bak"'
+        bat 'type "%FocussClient.gwt.xml%.bak" > "%FocussClient.gwt.xml%"'
+        bat 'del /f /q /a "%FocussClient.gwt.xml%.bak"'
 
         echo "."
         echo    "Muestro el Archivo ya modificado"   
         echo "--------------------------------------"
-        bat 'type %file%'
+        bat 'type %FocussClient.gwt.xml%'
         echo "--------------------------------------"
         pause
 
@@ -56,8 +56,8 @@ node {
 
         bat ':wri'
         bat 'set lin=%*'
-        bat 'lin=%%lin:%pal1-old%=%pal1-new%%%'
-        bat 'echo %lin%>>"%file%.bak"'
+        bat 'lin=%%lin:%old%=%new%%%'
+        bat 'echo %lin%>>"%FocussClient.gwt.xml%.bak"'
     
         bat 'goto :eof'
     
