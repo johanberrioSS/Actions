@@ -13,7 +13,7 @@ node {
 
         bat 'echo  Muestro el Archivo de texto Original'
         bat 'echo --------------------------------------'
-        bat 'type %texto.txt%'
+        bat 'type texto.txt'
         bat 'echo --------------------------------------'
 
         bat 'for /f "tokens=*" %%a in (%texto.txt%) do call :wri %%a'
