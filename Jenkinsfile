@@ -1,14 +1,16 @@
 node {
   
-      bat '@echo off'
-
-      bat 'set pal1-old=rojo'
-      bat 'set pal1-new=negro'
-      bat 'set pal2-old=casa'
-      bat 'set pal2-new=departamento'
+      '
 
 
       dir("D:/Development/Repos/Git/Java/Actions"){
+        
+        bat '@echo off'
+
+        bat 'set pal1-old=rojo'
+        bat 'set pal1-new=negro'
+        bat 'set pal2-old=casa'
+        bat 'set pal2-new=departamento
         
         bat 'set file=D:/Development/Repos/Git/Java/Actions/texto.txt'
         bat 'echo  Muestro el Archivo de texto Original'
@@ -29,7 +31,7 @@ node {
 
         bat 'goto :eof'
 
-       :wri
+        bat ':wri'
         bat 'set lin=%*'
         bat 'call set lin=%%lin:%pal1-old%=%pal1-new%%%'
         bat 'call set lin=%%lin:%pal2-old%=%pal2-new%%%'
