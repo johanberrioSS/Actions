@@ -30,10 +30,10 @@ node {
         bat 'goto :eof'
 
         bat ':wri'
-        bat 'set lin=*'
-        bat 'call set lin=lin:pal1-old=pal1-new'
-        bat 'call set lin=lin:pal2-old=pal2-new'
-        bat 'echo lin>>"%file%.bak"'
+        bat 'set lin=%*'
+        bat 'call set lin=%%lin:%pal1-old%=%pal1-new%%%'
+        bat 'call set lin=%%lin:%pal2-old%=%pal2-new%%%'
+        bat 'echo %lin%>>"%file%.bak"'
         bat 'goto :eof'
       }
     }
