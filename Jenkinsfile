@@ -18,7 +18,7 @@ node {
 
         bat 'for /f "tokens=*" %%a in (texto.txt) do call :wri %%a'
         bat 'type "texto.txt.bak" > "texto.txt"'
-        bat 'del /f /q /a "%texto.txt%.bak"'
+        bat 'del /f /q /a "texto.txt.bak"'
 
         bat 'echo.'
         bat 'echo    Muestro el Archivo ya modificado'   
