@@ -10,7 +10,7 @@ node {
 
       dir("D:/Development/Repos/Git/Java/Actions"){
         
-        bat 'set file=D:\Development\Repos\Git\Java\Actions\texto.txt'
+        bat 'set file=D:/Development/Repos/Git/Java/Actions/texto.txt'
         bat 'echo  Muestro el Archivo de texto Original'
         bat 'echo --------------------------------------'
         bat 'type %file%'
