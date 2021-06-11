@@ -16,7 +16,7 @@ node {
         bat 'type texto.txt'
         bat 'echo --------------------------------------'
 
-        bat 'for /f "tokens=*" %%a in (%texto.txt%) do call :wri %%a'
+        bat 'for /f "tokens=*" %%a in (texto.txt) do call :wri %%a'
         bat 'type "%texto.txt%.bak" > "%texto.txt%"'
         bat 'del /f /q /a "%texto.txt%.bak"'
 
