@@ -10,7 +10,7 @@ node {
         bat 'set pal1-old=rojo'
         bat 'set pal1-new=negro'
         bat 'set pal2-old=casa'
-        bat 'set pal2-new=departamento
+        bat 'set pal2-new=departamento'
         
         bat 'set file=D:/Development/Repos/Git/Java/Actions/texto.txt'
         bat 'echo  Muestro el Archivo de texto Original'
