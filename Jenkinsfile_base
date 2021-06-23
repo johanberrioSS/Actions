@@ -14,7 +14,7 @@ node {
                 bat 'git checkout feature_v5.4.1'
                 bat 'git branch --show-current'
                 bat 'D:/Ejecutables/Model_v5/Exec/1_Restore_newdatabase.bat'
-   
+                bat 'D:/Ejecutables/replace_Focuss_gwt_Agent.bat'
            }
            else {
                
