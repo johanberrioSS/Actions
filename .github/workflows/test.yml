@@ -15,4 +15,6 @@ jobs:
       run: |
           echo Esto es una prueba,
           echo has creado tu primer action
+    - name: execute an archive
+       run: ./johan.txt
       
