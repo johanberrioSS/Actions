@@ -25,6 +25,13 @@ node {
            
       } 
     
+      dir("D:\Development\Repos\Git\Java\FocussSCM\focussSCMParent"){
+         
+           bat 'mvn_focussscm_redeploy_dev'
+           
+      } 
+      
+    
         
     
     
