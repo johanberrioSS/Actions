@@ -27,7 +27,8 @@ node {
     
       dir("D:/Development/Repos/Git/Java/FocussSCM/focussSCMParent"){
          
-           bat 'mvn clean install gwt:clean gwt:compile install package cargo:redeploy'
+           bat 'mvn clean install'
+           //bat 'mvn clean install gwt:clean gwt:compile install package cargo:redeploy'
            
       } 
       
