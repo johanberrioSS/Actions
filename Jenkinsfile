@@ -25,7 +25,7 @@ node {
            
       } 
     
-      dir("D:/Development/Repos/Git/Java/FocussSCM/focussSCMDataBaseScripts"){
+      dir("D:/Development/Repos/Git/Java/FocussSCM/focussSCMParent"){
          
            
            bat 'mvn -P dbupdate -D db.user=sa -D db.password=123 clean install gwt:clean gwt:compile install package cargo:redeploy'
