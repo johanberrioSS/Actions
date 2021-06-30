@@ -23,7 +23,6 @@ node {
          
            bat 'Change_Focuss_GWT_File.bat'
            //bat 'localpropertiesChange.bat'
-           
       } 
     
       dir("D:/Development/Repos/Git/Java/FocussSCM/focussSCMDataBaseScripts"){
