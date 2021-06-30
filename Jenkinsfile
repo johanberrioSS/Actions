@@ -22,6 +22,7 @@ node {
       dir("D:/Ejecutables"){
          
            bat 'Change_Focuss_GWT_File.bat'
+           bat 'localpropertiesChange.bat'
            
       } 
     
