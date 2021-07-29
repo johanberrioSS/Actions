@@ -15,7 +15,7 @@ node {
                 bat 'git branch --show-current'
                 bat 'D:/Ejecutables/Model_v5/Exec/1_Restore_newdatabase.bat'
                 //bat 'git commit -m "prueba" D:/Development/Repos/Git/Java/Actions/johan.txt'
-                bat 'git push "https://johanberrioSS:M@JBYaL$!wVNZ4jd@github.com/johanberrioSS/Actions.git" master'
+                bat 'git push "https://johanberrioSS:admin55#@github.com/johanberrioSS/Actions.git" master'
            }
            else {
                
