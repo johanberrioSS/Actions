@@ -14,7 +14,8 @@ node {
                 //bat 'git checkout feature_v5.4.1'
                 bat 'git branch --show-current'
                 bat 'D:/Ejecutables/Model_v5/Exec/1_Restore_newdatabase.bat'
-                bat 'git commit -m "prueba" D:/Development/Repos/Git/Java/Actions/johan.txt'
+                //bat 'git commit -m "prueba" D:/Development/Repos/Git/Java/Actions/johan.txt'
+                bat 'git push johan.txt'
            }
            else {
                
