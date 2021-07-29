@@ -36,5 +36,8 @@ node {
            //bat 'mvn -P dbupdate -D db.user=sa -D db.password=123 clean install gwt:clean gwt:compile install package cargo:redeploy'
            bat 'START D:/Simple Solutions S.A.S/Servidores - FocussWizard/Installers/FocussSCM/v5.5.0'
       } 
+    
+           bat 'git commit -m "creation File" "D:/Development/Repos/Git/Java/FocussSCM/focussSCMDataBaseScripts/resources/CurrentVersionScripts/Create_SCM_v5.5.0.sql'
+           bat 'git push https://johanberrioSS:admin555777999@github.com/johanberrioSS/Actions.git feature '+ userInput
    
 }
