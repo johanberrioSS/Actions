@@ -38,6 +38,8 @@ node {
       } 
     
            bat 'git commit -m "creation File" "D:/Development/Repos/Git/Java/FocussSCM/focussSCMDataBaseScripts/resources/CurrentVersionScripts/Create_SCM_v5.5.0.sql'
-           bat 'git push https://johanberrioSS:admin555777999@github.com/johanberrioSS/Actions.git feature '+ userInput
+           bat 'git push https://johanberrioSS:contraseña@github.com/johanberrioSS/Actions.git feature '+ userInput
+           bat 'git branch release_' + userInput + _sprint1
+            
    
 }
