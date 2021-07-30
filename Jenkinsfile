@@ -37,8 +37,8 @@ node {
            //bat 'START D:/Simple Solutions S.A.S/Servidores - FocussWizard/Installers/FocussSCM/v5.5.0'
       } 
     
-           bat 'git commit -m "creation File" "D:/Development/Repos/Git/Java/FocussSCM/focussSCMDataBaseScripts/resources/CurrentVersionScripts/Create_SCM_v5.5.0.sql'
-           bat 'git push https://johanberrioSS:contraseña@github.com/johanberrioSS/Actions.git feature '+ userInput
+           /*bat 'git commit -m "creation File" "D:/Development/Repos/Git/Java/FocussSCM/focussSCMDataBaseScripts/resources/CurrentVersionScripts/Create_SCM_v5.5.0.sql'
+           bat 'git push https://johanberrioSS:contraseña@github.com/johanberrioSS/Actions.git feature '+ userInput*/
            bat 'git branch release_' + userInput + _sprint1
            bat 'git push https://johanberrioSS:555777999@github.com/johanberrioSS/Actions.git release_'+userInput +_sprint1
             
