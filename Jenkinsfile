@@ -46,8 +46,8 @@ node {
             ])
     
     dir("D:/Development/Repos/Git/Java/Actions"){
-           bat 'git branch release_' + userInputdos + '_sprint1'
-           bat 'git push https://johanberrioSS:555777999@github.com/johanberrioSS/Actions.git release_'+userInputdos +'_sprint1'
+           bat 'git branch release_' + userInputdos + '_sprint2'
+           bat 'git push https://johanberrioSS:555777999@github.com/johanberrioSS/Actions.git release_'+userInputdos +'_sprint2'
     }        
    
 }
