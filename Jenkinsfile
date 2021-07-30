@@ -44,8 +44,8 @@ node {
             id: 'userInputdos', message: 'Digite la rama', parameters: [
             [$class: 'TextParameterDefinition', defaultValue: 'feature', description: 'Environment', name: 'feature']
             ])
-           bat 'git branch release_' + userInputdos + _sprint1
-           bat 'git push https://johanberrioSS:555777999@github.com/johanberrioSS/Actions.git release_'+userInputdos +_sprint1
+           bat 'git branch release_' + userInputdos + '_sprint1'
+           bat 'git push https://johanberrioSS:555777999@github.com/johanberrioSS/Actions.git release_'+userInputdos +'_sprint1'
             
    
 }
