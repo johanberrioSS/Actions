@@ -43,7 +43,7 @@ node {
       } 
            
            //se realiza el commit al repositorio del archivo de creación de la versión 
-           bat 'git commit -m "creation File" "D:/Development/Repos/Git/Java/FocussSCM/focussSCMDataBaseScripts/resources/CurrentVersionScripts/Create_SCM_v5.4.0.sql'
+           bat 'git commit -m "creation File" "D:/Development/Repos/Git/Java/Actions/Create_SCM_v5.4.0.sql'
            bat 'git push https://johanberrioSS:contraseña@github.com/johanberrioSS/Actions.git feature '+ version
            
                 
