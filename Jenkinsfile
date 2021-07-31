@@ -1,53 +1,54 @@
 node {
-    
-     dir("D:/Development/Repos/Git/Java/Actions"){
-        
-         
-        stage 'verification'
-        def userInput = input(
-        id: 'userInput', message: 'Digite la rama', parameters: [
+     //se crea una variable que llevara la versión actual que se va a desplegar    
+        stage 'version'
+        def version = input(
+        id: 'version', message: 'Digite la versión a desplegar', parameters: [
         [$class: 'TextParameterDefinition', defaultValue: 'feature', description: 'Environment', name: 'feature']
         ])
-        echo ("feature: "+userInput)
-                  
-           bat 'git checkout ' + userInput
+    
+     // se cambia al directorio del repositorio
+     dir("D:/Development/Repos/Git/Java/Actions"){
+         
+        echo ("feature: "+version)
+           //se cambia a la rama de la versión a desplegar
+           bat 'git checkout ' + version
+           //se muestra la rama actual
            bat 'git branch --show-current'
      } 
-    
+     //se cambia al directorio donde se encuentre el bat de restauración y actualización de la newdatabase
      dir("D:/Ejecutables/Model_v5/Exec"){
-         
+           //se restaura y actualiza la newdatabase 
            bat '1_Restore_newdatabase.bat'
            
       } 
+    
+      //se cambia al directorio donde se encuentra el bat que modifica el archivo FocussClient.gwt.xml
       dir("D:/Ejecutables"){
          
            bat 'Change_Focuss_GWT_File.bat'
            //bat 'localpropertiesChange.bat'
       } 
-    
+      //se cambia al directorio desde donde se ejecuta la meta mvn_focussscm_deployScript_install
       dir("D:/Development/Repos/Git/Java/FocussSCM/focussSCMDataBaseScripts"){
         
         bat 'mvn clean install'
         bat 'START D:/Development/Repos/Maven/com/focussscm/dbversion.update/0.0.1'
         }    
-    
+      //se cambia al directorio desde donde se ejecuta la meta mvn_focussscm_redeploy
       dir("D:/Development/Repos/Git/Java/FocussSCM/focussSCMParent"){
-
+           
            //bat 'mvn -P dbupdate -D db.user=sa -D db.password=123 clean install gwt:clean gwt:compile install package cargo:redeploy'
            //bat 'START D:/Simple Solutions S.A.S/Servidores - FocussWizard/Installers/FocussSCM/v5.5.0'
       } 
+           //se realiza el commit al repositorio del archivo de creación de la versión 
+           bat 'git commit -m "creation File" "D:/Development/Repos/Git/Java/FocussSCM/focussSCMDataBaseScripts/resources/CurrentVersionScripts/'+'Create_SCM_'+version+'.sql'
+           bat 'git push https://johanberrioSS:contraseña@github.com/johanberrioSS/Actions.git feature '+ version
     
-           /*bat 'git commit -m "creation File" "D:/Development/Repos/Git/Java/FocussSCM/focussSCMDataBaseScripts/resources/CurrentVersionScripts/Create_SCM_v5.5.0.sql'
-           bat 'git push https://johanberrioSS:contraseña@github.com/johanberrioSS/Actions.git feature '+ userInput*/
-           stage 'verification'
-            def userInputdos = input(
-            id: 'userInputdos', message: 'Digite la rama', parameters: [
-            [$class: 'TextParameterDefinition', defaultValue: 'feature', description: 'Environment', name: 'feature']
-            ])
-    
+    //se cambia al directorio del repositorio
     dir("D:/Development/Repos/Git/Java/Actions"){
-           //bat 'git branch release_' + userInputdos + '_sprint2'
-           bat 'git push https://johanberrioSS:555777999@github.com/johanberrioSS/Actions.git release_'+userInputdos +'_sprint2'
+           //se crea la rama de liberación
+           bat 'git branch release_' + version + '_sprint3'
+           bat 'git push https://johanberrioSS:555777999@github.com/johanberrioSS/Actions.git release_'+version+'_sprint3'
     }        
    
 }
