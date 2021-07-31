@@ -7,20 +7,19 @@ node {
         ])
     
      // se cambia al directorio del repositorio
-     dir("D:/Development/Repos/Git/Java/Actions"){
-         
-        echo ("feature: "+version)
+   dir("D:/Development/Repos/Git/Java/Actions"){
+          
            //se cambia a la rama de la versión a desplegar
            bat 'git checkout ' + version
            //se muestra la rama actual
            bat 'git branch --show-current'
-     } 
-     //se cambia al directorio donde se encuentre el bat de restauración y actualización de la newdatabase
-     dir("D:/Ejecutables/Model_v5/Exec"){
+     
+      //se cambia al directorio donde se encuentre el bat de restauración y actualización de la newdatabase
+      dir("D:/Ejecutables/Model_v5/Exec"){
            //se restaura y actualiza la newdatabase 
            bat '1_Restore_newdatabase.bat'
            
-      } 
+       } 
     
       //se cambia al directorio donde se encuentra el bat que modifica el archivo FocussClient.gwt.xml
       dir("D:/Ejecutables"){
@@ -28,12 +27,14 @@ node {
            bat 'Change_Focuss_GWT_File.bat'
            //bat 'localpropertiesChange.bat'
       } 
+        
       //se cambia al directorio desde donde se ejecuta la meta mvn_focussscm_deployScript_install
       dir("D:/Development/Repos/Git/Java/FocussSCM/focussSCMDataBaseScripts"){
         
         bat 'mvn clean install'
         bat 'START D:/Development/Repos/Maven/com/focussscm/dbversion.update/0.0.1'
         }    
+        
       //se cambia al directorio desde donde se ejecuta la meta mvn_focussscm_redeploy
       dir("D:/Development/Repos/Git/Java/FocussSCM/focussSCMParent"){
            
@@ -44,11 +45,11 @@ node {
            bat 'git commit -m "creation File" "D:/Development/Repos/Git/Java/FocussSCM/focussSCMDataBaseScripts/resources/CurrentVersionScripts/'+'Create_SCM_'+version+'.sql'
            bat 'git push https://johanberrioSS:contraseña@github.com/johanberrioSS/Actions.git feature '+ version
     
-    //se cambia al directorio del repositorio
-    dir("D:/Development/Repos/Git/Java/Actions"){
+      //se cambia al directorio del repositorio
+      dir("D:/Development/Repos/Git/Java/Actions"){
            //se crea la rama de liberación
            bat 'git branch release_' + version + '_sprint3'
            bat 'git push https://johanberrioSS:555777999@github.com/johanberrioSS/Actions.git release_'+version+'_sprint3'
-    }        
-   
+      }        
+   }
 }
