@@ -2,12 +2,18 @@ node {
      //se crea una variable que llevara la versión actual que se va a desplegar    
         stage 'version'
         def version = input(
-        id: 'version', message: 'Digite la versión a desplegar', parameters: [
-        [$class: 'TextParameterDefinition', defaultValue: 'feature', description: 'Environment', name: 'feature']
+        id: 'version', message: 'Versión a desplegar', parameters: [
+        [$class: 'TextParameterDefinition', defaultValue: 'feature', description: 'Environment', name: 'version']
+        ])
+     //se crea una variable que llevara el sprint actual  
+        stage 'ciclo'
+        def ciclo = input(
+        id: 'version', message: 'Ciclo de la versión', parameters: [
+        [$class: 'TextParameterDefinition', defaultValue: 'sprint1', description: 'Environment', name: 'ciclo']
         ])
     
-     // se cambia al directorio del repositorio
-   dir("D:/Development/Repos/Git/Java/Actions"){
+   // se cambia al directorio del repositorio
+   dir("D:/Development/Repos/Git/Java/FocussSCM"){
           
            //se cambia a la rama de la versión a desplegar
            bat 'git checkout ' + version
@@ -43,15 +49,12 @@ node {
       } 
            
            //se realiza el commit al repositorio del archivo de creación de la versión 
-           bat 'git commit -m "creation File" "D:/Development/Repos/Git/Java/Actions/Create_SCM_v5.4.0.sql'
-           bat 'git push https://johanberrioSS:contraseña@github.com/johanberrioSS/Actions.git feature '+ version
+           bat 'git commit -m "creation File" "D:/Development/Repos/Git/Java/FocussSCM/focussSCMDataBaseScripts/resources/CurrentVersionScripts/+'Create_SCM_'+'version'+'.sql'
+           bat 'git push https://johanberrioSS:contraseña@github.com/johanberrioSS/Actions.git feature'+version
            
-                
-      //se cambia al directorio del repositorio
-      dir("D:/Development/Repos/Git/Java/Actions"){
-           //se crea la rama de liberación
-           bat 'git branch release_' + version + '_sprint3'
-           bat 'git push https://johanberrioSS:555777999@github.com/johanberrioSS/Actions.git release_'+version+'_sprint3'
-      }        
+           //se crea la rama de liberación de ciclo
+           bat 'git branch release_' + version + ciclo
+           bat 'git push https://johanberrioSS:contraseña@github.com/johanberrioSS/Actions.git release_'+version+'_'+ciclo
+              
    }
 }
