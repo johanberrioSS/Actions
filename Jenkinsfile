@@ -41,11 +41,11 @@ node {
            //bat 'mvn -P dbupdate -D db.user=sa -D db.password=123 clean install gwt:clean gwt:compile install package cargo:redeploy'
            //bat 'START D:/Simple Solutions S.A.S/Servidores - FocussWizard/Installers/FocussSCM/v5.5.0'
       } 
-           dir("D:/Development/Repos/Git/Java/FocussSCM/focussSCMDataBaseScripts/resources/CurrentVersionScripts"){
+           
            //se realiza el commit al repositorio del archivo de creación de la versión 
-           bat 'git commit -m "creation File" "D:/Development/Repos/Git/Java/FocussSCM/focussSCMDataBaseScripts/resources/CurrentVersionScripts/'+'Create_SCM_'+version+'.sql'
+           bat 'git commit -m "creation File" "D:/Development/Repos/Git/Java/FocussSCM/focussSCMDataBaseScripts/resources/CurrentVersionScripts/Create_SCM_v5.4.0.sql'
            bat 'git push https://johanberrioSS:contraseña@github.com/johanberrioSS/Actions.git feature '+ version
-           }
+           
                 
       //se cambia al directorio del repositorio
       dir("D:/Development/Repos/Git/Java/Actions"){
