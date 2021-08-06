@@ -23,14 +23,14 @@ node {
       //se cambia al directorio donde se encuentre el bat de restauración y actualización de la newdatabase
       dir("D:/Ejecutables/Model_v5/Exec"){
            //se restaura y actualiza la newdatabase 
-           bat '1_Restore_newdatabase.bat'
+          // bat '1_Restore_newdatabase.bat'
            
        } 
     
       //se cambia al directorio donde se encuentra el bat que modifica el archivo FocussClient.gwt.xml
       dir("D:/Ejecutables"){
          
-           bat 'Change_Focuss_GWT_File.bat'
+           //bat 'Change_Focuss_GWT_File.bat'
            //bat 'localpropertiesChange.bat'
       } 
         
@@ -44,8 +44,8 @@ node {
       //se cambia al directorio desde donde se ejecuta la meta mvn_focussscm_redeploy
       dir("D:/Development/Repos/Git/Java/FocussSCM/focussSCMParent"){
            
-           bat 'mvn -P dbupdate -D db.user=sa -D db.password=123 clean install gwt:clean gwt:compile install package cargo:redeploy'
-           bat 'START D:/"Simple Solutions S.A.S/Servidores - FocussWizard"/Installers/FocussSCM/v5.5.0'
+           //bat 'mvn -P dbupdate -D db.user=sa -D db.password=123 clean install gwt:clean gwt:compile install package cargo:redeploy'
+           bat 'START D:/"%Simple Solutions S.A.S/Servidores - FocussWizard%"/Installers/FocussSCM/v5.5.0'
       } 
            
            //se realiza el commit al repositorio del archivo de creación de la versión. 
