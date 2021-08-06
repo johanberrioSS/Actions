@@ -48,7 +48,7 @@ node {
            bat 'START D:/"Simple Solutions S.A.S/Servidores - FocussWizard"/Installers/FocussSCM/v5.5.0'
       } 
            
-           //se realiza el commit al repositorio del archivo de creación de la versión 
+           //se realiza el commit al repositorio del archivo de creación de la versión. 
            //bat 'git commit -m "creation File" "D:/Development/Repos/Git/Java/FocussSCM/focussSCMDataBaseScripts/resources/CurrentVersionScripts/+'Create_SCM_'+'version'+'.sql'
            //bat 'git push https://johanberrioSS:contraseña@github.com/johanberrioSS/Actions.git feature'+version
            
