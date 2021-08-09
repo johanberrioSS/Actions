@@ -53,7 +53,7 @@ node {
            //bat 'git push https://johanberrioSS:contraseña@github.com/johanberrioSS/Actions.git feature'+version
            
            //se crea la rama de liberación de ciclo
-           //bat 'git branch release_' + version + ciclo
+           //bat 'git branch release_' + version +'_'+ ciclo
            //bat 'git push https://johanberrioSS:contraseña@github.com/johanberrioSS/Actions.git release_'+version+'_'+ciclo
               
    }
