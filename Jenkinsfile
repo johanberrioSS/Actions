@@ -36,7 +36,7 @@ node {
       //se cambia al directorio donde se encuentra el bat que modifica el archivo FocussClient.gwt.xml
       dir("D:/Simple Solutions S.A.S/Developers - General/Archivos de Despliegue"){
          
-           //bat 'Change_Focuss_GWT_File.bat'
+           bat 'Change_Focuss_GWT_File.bat'
            //bat 'localpropertiesChange.bat'
       } 
         
