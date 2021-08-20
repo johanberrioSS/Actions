@@ -43,7 +43,7 @@ node {
       //se cambia al directorio desde donde se ejecuta la meta mvn_focussscm_deployScript_install
       dir("D:/Development/Repos/Git/Java/FocussSCM/focussSCMDataBaseScripts"){
         
-        bat 'mvn -Dmaven.test.skip=true clean install'
+        //bat 'mvn -Dmaven.test.skip=true clean install'
         bat 'START D:/Development/Repos/Maven/com/focussscm/dbversion.update/0.0.1'
         }    
         
