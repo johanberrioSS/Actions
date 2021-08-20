@@ -1,3 +1,9 @@
+/******************************************************
+Author: Johan Estevan Berrio Estrada
+Fecha de creación: 20/05/2021
+versión: 2.1
+********************************************************/
+
 node {
      //se crea una variable que llevara la versión actual que se va a desplegar    
         stage 'version'
