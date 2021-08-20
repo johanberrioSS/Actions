@@ -21,14 +21,14 @@ node {
            bat 'git branch --show-current'
      
       //se cambia al directorio donde se encuentre el bat de restauración y actualización de la newdatabase
-      dir("D:/Ejecutables/Model_v5/Exec"){
+      dir("D:/Development/Repos/Git/Batch/CheckUpdateScript"){
            //se restaura y actualiza la newdatabase 
-          // bat '1_Restore_newdatabase.bat'
+          // bat '0_Check_Update_Script.bat'
            
        } 
     
       //se cambia al directorio donde se encuentra el bat que modifica el archivo FocussClient.gwt.xml
-      dir("D:/Ejecutables"){
+      dir("D:/Simple Solutions S.A.S/Developers - General/Archivos de Despliegue"){
          
            //bat 'Change_Focuss_GWT_File.bat'
            //bat 'localpropertiesChange.bat'
