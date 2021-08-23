@@ -29,7 +29,7 @@ node {
       //se cambia al directorio donde se encuentre el bat de restauración y actualización de la newdatabase
       dir("D:/Development/Repos/Git/Batch/CheckUpdateScript"){
            //se restaura y actualiza la newdatabase 
-          // bat '0_Check_Update_Script.bat'
+           bat '0_Check_Update_Script.bat'
            
        } 
     
